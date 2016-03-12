@@ -12,5 +12,16 @@ NOTES:
 */
 
 char KthIndexFromEnd(char *str, int K) {
+	if (str==nullptr)
 	return '\0';
+	int count;
+	char letter;
+	for (count = 0; str[count] != '\0'; count++)
+	{
+	}
+	if (K > count)
+		return '\0';
+	letter = str[count - K - 1];
+	return letter;
+	
 }
